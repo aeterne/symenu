@@ -9,8 +9,7 @@
 
 <% @categories.each do |category| %>
   <tr>
-    <td><%= image_tag(category.photo.url(:thumb), :only_path => false) %></td>
-    <td><%= image_path(category.photo.url) %></td>
+    <td><%= image_tag image_url(category.photo.url(:thumb)) %></td>
     <td><%= category.name %></td>
     <td><%= category.information %></td>
     <td><%= link_to 'Show', category %></td>

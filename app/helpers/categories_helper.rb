@@ -9,4 +9,8 @@ def absolute_image_path(*args)
   raw(image_path(*args).sub /src="(.*?)"/, "src=\"#{request.protocol}#{request.host_with_port}" + '\1"')
 end
 
+def image_url(source)
+	"#{root_url}#{image_path(source)}"	
+end
+
 end

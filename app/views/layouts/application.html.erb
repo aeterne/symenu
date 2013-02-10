@@ -45,8 +45,25 @@
 		  </section>
 		</nav>
 
+		<div class="row">
+			<div class="three columns">
+				<ul class="nav-bar vertical">
+					<li><%= link_to 'add logo', uploads_path %> </li>
+					<li><%= link_to 'add Category', categories_path %></li>
+					<li><%= link_to 'add Menu', menus_path %></li>
+
+				</ul>
+			</div>
+			<div class="nine columns">
+			
+				<%= yield %>
+			</div>
+		</div>
+
+		
 
 
-  <%= yield %>
+
+  
 </body>
 </html>

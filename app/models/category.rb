@@ -6,6 +6,7 @@ class Category < ActiveRecord::Base
   			:styles => { :medium => "300x300>", :thumb => "100x100>" }
   			#:url => "/photos/:class/:attachment/:id/:style/:basename.:extension",
   			#:path => "/photos/:class/:attachment/:id/:style/:basename.:extension"
+  validates :name, :information, :photo, :menus, :presence => true
 
 
   # validates :information, :name, :presence => true

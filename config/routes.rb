@@ -1,4 +1,7 @@
 Symenu::Application.routes.draw do
+  resources :uploads
+
+
   resources :categories
 
 
